@@ -14,6 +14,8 @@
 		104516972360C6F800F0558D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104516962360C6F800F0558D /* Preview Assets.xcassets */; };
 		1045169A2360C6F800F0558D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104516982360C6F800F0558D /* LaunchScreen.storyboard */; };
 		104516A22360C70600F0558D /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 104516A12360C70600F0558D /* start.txt */; };
+		104516A42360CF7B00F0558D /* WordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104516A32360CF7B00F0558D /* WordValidator.swift */; };
+		104516A62360EC3700F0558D /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104516A52360EC3700F0558D /* WordGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		104516992360C6F800F0558D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1045169B2360C6F800F0558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104516A12360C70600F0558D /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		104516A32360CF7B00F0558D /* WordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordValidator.swift; sourceTree = "<group>"; };
+		104516A52360EC3700F0558D /* WordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				1045168D2360C6F700F0558D /* AppDelegate.swift */,
 				1045168F2360C6F700F0558D /* SceneDelegate.swift */,
 				104516912360C6F700F0558D /* ContentView.swift */,
+				104516A32360CF7B00F0558D /* WordValidator.swift */,
+				104516A52360EC3700F0558D /* WordGenerator.swift */,
 				104516932360C6F800F0558D /* Assets.xcassets */,
 				104516982360C6F800F0558D /* LaunchScreen.storyboard */,
 				1045169B2360C6F800F0558D /* Info.plist */,
@@ -150,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104516A62360EC3700F0558D /* WordGenerator.swift in Sources */,
+				104516A42360CF7B00F0558D /* WordValidator.swift in Sources */,
 				1045168E2360C6F700F0558D /* AppDelegate.swift in Sources */,
 				104516902360C6F700F0558D /* SceneDelegate.swift in Sources */,
 				104516922360C6F700F0558D /* ContentView.swift in Sources */,
