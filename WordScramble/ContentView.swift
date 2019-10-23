@@ -53,7 +53,7 @@ struct ContentView: View {
             newWord = ""
         case .failure(let error):
             switch error {
-            case .error(let title, let message):
+            case .validationError(let title, let message):
                 wordError(title: title, message: message)
             }
         }

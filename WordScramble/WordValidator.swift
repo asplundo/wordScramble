@@ -8,24 +8,24 @@ struct WordValidator {
     
     func validate() -> Result<Void, WordError> {
         guard isLongEnough() else {
-            return .failure(WordError.error(title: "Word to short", message: "Must be atleast three letters long"))
+            return .failure(WordError.validationError(title: "Word to short", message: "Must be atleast three letters long"))
         }
         
         guard isNotRootWord() else {
-            return .failure(WordError.error(title: "Same word", message: "Answer cant be the start word"))
+            return .failure(WordError.validationError(title: "Same word", message: "Answer cant be the start word"))
         }
         
         
         guard isOriginal() else {
-            return .failure(WordError.error(title: "Word used already", message: "Be more original"))
+            return .failure(WordError.validationError(title: "Word used already", message: "Be more original"))
         }
 
         guard isPossible() else {
-            return .failure(WordError.error(title: "Word not recognized", message: "You can't just make them up, you know!"))
+            return .failure(WordError.validationError(title: "Word not recognized", message: "You can't just make them up, you know!"))
         }
 
         guard isReal() else {
-            return .failure(WordError.error(title: "Word not possible", message: "That isn't a real word."))
+            return .failure(WordError.validationError(title: "Word not possible", message: "That isn't a real word."))
         }
         return .success(())
     }
@@ -64,5 +64,5 @@ struct WordValidator {
 }
 
 enum WordError: Error {
-    case error(title: String, message: String)
+    case validationError(title: String, message: String)
 }
